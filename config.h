@@ -105,3 +105,11 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
+
+
+static const char *const autostart[] = {
+	"/home/testninja/.scripts/set_bg.sh", "/home/testninja/.config/wallpaper.jpg", NULL,
+	"picom", NULL,
+	NULL
+};
+
