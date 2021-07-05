@@ -101,6 +101,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ShiftMask,             XK_r,      quit,           {1} },
+	{ MODKEY|ShiftMask,             XK_k,      pushup,         {0} },
+	{ MODKEY|ShiftMask,             XK_j,      pushdown,       {0} },
 };
 
 static Button buttons[] = {
