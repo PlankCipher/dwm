@@ -52,7 +52,7 @@ static const Rule rules[] = {
 	{ NULL,               "libreoffice",    NULL,       1 << 5,       0,           -1 },
 	{ "discord",          NULL,             NULL,       1 << 6,       0,           -1 },
 	{ "TelegramDesktop",  NULL,             NULL,       1 << 6,       0,           -1 },
-	{ "Thundermail",      NULL,             NULL,       1 << 7,       0,           -1 },
+	{ "Thunderbird",      NULL,             NULL,       1 << 7,       0,           -1 },
 	{ "Todoist",          NULL,             NULL,       1 << 8,       0,           -1 },
 };
 
@@ -170,8 +170,8 @@ static Button buttons[] = {
 static const char *const autostart[] = {
 	"unclutter", NULL,
 	"/home/testninja/.scripts/set_bg.sh", "/home/testninja/.config/wallpaper.jpg", NULL,
-	"qalc", "-exrates", NULL,
-	"xautolock", "-time", "1", "-locker", "/home/testninja/.scripts/i3lock_fancy_multimonitor/lock", "-n -p -g", NULL,
+	"echo", "'0'", "|", "qalc", "-exrates", ">", "/dev/null", NULL,
+	"xautolock", "-time", "1", "-locker", "\"/home/testninja/.scripts/i3lock_fancy_multimonitor/lock -n -p -g\"", NULL,
 	"greenclip", "clear", NULL,
 	"greenclip", "daemon", NULL,
 	"setxkbmap", "-layout", "us,ara", "-option", "grp:win_space_toggle,caps:escape", NULL,
