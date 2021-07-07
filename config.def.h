@@ -90,7 +90,7 @@ static Key keys[] = {
 	{ WM_MOD,                       XK_d,                      incnmaster,     {.i = -1 } },
 	{ WM_MOD,                       XK_i,                      incnmaster,     {.i = +1 } },
 	{ WM_MOD,                       XK_q,                      killclient,     {0} },
-	{ WM_MOD|ShiftMask,             XK_q,                      quit,           {0} },
+	{ WM_MOD|ShiftMask|ControlMask, XK_q,                      quit,           {0} },
 	{ WM_MOD|ShiftMask,             XK_r,                      quit,           {1} },
 	{ WM_MOD,                       XK_f,                      togglefullscr,  {0} },
 	{ WM_MOD,                       XK_h,                      setmfact,       {.f = -0.05} },
