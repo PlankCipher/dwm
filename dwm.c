@@ -63,7 +63,7 @@
 #define DWMBLOCKSLOCKFILE       "/var/local/dwmblocks/dwmblocks.pid"
 #define DELIMITERENDCHAR        10
 #define LSPAD                   (lrpad / 2) /* padding on left side of status text */
-#define RSPAD                   (lrpad / 2) /* padding on right side of status text */
+#define RSPAD                   0 /* padding on right side of status text */
 
 #define SYSTEM_TRAY_REQUEST_DOCK    0
 
@@ -2675,11 +2675,11 @@ updatestatus(void)
                         else
                                 *(sts++) = *rst;
                 *stp = *stc = *sts = '\0';
-                wstext = TEXTW(stextp) + LSPAD + RSPAD;
+                wstext = TEXTW(stextp);
         } else {
                 strcpy(stextc, "dwm-"VERSION);
                 strcpy(stexts, stextc);
-                wstext = TEXTW(stextc) + LSPAD + RSPAD;
+                wstext = TEXTW(stextc);
         }
         drawbar(selmon);
 }
