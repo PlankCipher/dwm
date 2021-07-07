@@ -27,7 +27,7 @@ static const char norm_fg[]         = "#bbbbbb";
 static const char sel_fg[]          = "#eeeeee";
 static const char col_gray5[]       = "#98971a";
 static const char sel_bg_border[]   = "#928374";
-static const char col1[]            = "#ffffff";
+static const char col1[]            = "#ff0000";
 static const char col2[]            = "#ffffff";
 static const char col3[]            = "#ffffff";
 static const char col4[]            = "#ffffff";
@@ -183,18 +183,4 @@ static Button buttons[] = {
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            WM_MOD,         Button1,        tag,            {0} },
 	{ ClkTagBar,            WM_MOD,         Button3,        toggletag,      {0} },
-};
-
-static const char *const autostart[] = {
-	"unclutter", NULL,
-	"/home/testninja/.scripts/set_bg.sh", "/home/testninja/.config/wallpaper.jpg", NULL,
-	"echo", "'0'", "|", "qalc", "-exrates", ">", "/dev/null", NULL,
-	"xautolock", "-time", "1", "-locker", "\"/home/testninja/.scripts/i3lock_fancy_multimonitor/lock -n -p -g\"", NULL,
-	"greenclip", "clear", NULL,
-	"greenclip", "daemon", NULL,
-	"setxkbmap", "-layout", "us,ara", "-option", "grp:win_space_toggle,caps:escape", NULL,
-	"thunderbird", NULL,
-	"dunst", NULL,
-	"picom", NULL,
-	NULL
 };
