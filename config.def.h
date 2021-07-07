@@ -27,10 +27,26 @@ static const char norm_fg[]         = "#bbbbbb";
 static const char sel_fg[]          = "#eeeeee";
 static const char col_gray5[]       = "#98971a";
 static const char sel_bg_border[]   = "#928374";
+static const char col1[]            = "#ffffff";
+static const char col2[]            = "#ffffff";
+static const char col3[]            = "#ffffff";
+static const char col4[]            = "#ffffff";
+static const char col5[]            = "#ffffff";
+static const char col6[]            = "#ffffff";
+
+enum { SchemeNorm, SchemeCol1, SchemeCol2, SchemeCol3, SchemeCol4,
+       SchemeCol5, SchemeCol6, SchemeSel }; /* color schemes */
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { norm_fg, norm_bg, norm_border },
-	[SchemeSel]  = { sel_fg, sel_bg_border,  sel_bg_border  },
+	[SchemeNorm]  = { norm_fg,   norm_bg,        norm_border },
+	[SchemeSel]   = { sel_fg,    sel_bg_border,  sel_bg_border  },
+	[SchemeCol1]  = { col1,      norm_bg,        norm_border },
+	[SchemeCol2]  = { col2,      norm_bg,        norm_border },
+	[SchemeCol3]  = { col3,      norm_bg,        norm_border },
+	[SchemeCol4]  = { col4,      norm_bg,        norm_border },
+	[SchemeCol5]  = { col5,      norm_bg,        norm_border },
+	[SchemeCol6]  = { col6,      norm_bg,        norm_border },
 };
 
 static const char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
@@ -157,7 +173,9 @@ static Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
-	{ ClkStatusText,        0,              Button2,        spawn,          SHCMD("st") },
+	{ ClkStatusText,        0,              Button1,        sigdwmblocks,   {.i = 1} },
+	{ ClkStatusText,        0,              Button2,        sigdwmblocks,   {.i = 2} },
+	{ ClkStatusText,        0,              Button3,        sigdwmblocks,   {.i = 3} },
 	{ ClkClientWin,         WM_MOD,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         WM_MOD,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         WM_MOD,         Button3,        resizemouse,    {0} },
