@@ -14,8 +14,8 @@ static const int showsystray        = 1;
 
 static const unsigned int gappih    = 10;
 static const unsigned int gappiv    = 10;
-static const unsigned int gappoh    = 13;
-static const unsigned int gappov    = 13;
+static const unsigned int gappoh    = 15;
+static const unsigned int gappov    = 15;
 static const int smartgaps          = 0;
 
 static const char *fonts[]          = { "monospace:size=8", "Font Awesome 5 Free Solid:pixelsize=12" };
