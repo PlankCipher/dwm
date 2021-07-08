@@ -25,14 +25,13 @@ static const char norm_bg[]         = "#222222";
 static const char norm_border[]     = "#444444";
 static const char norm_fg[]         = "#bbbbbb";
 static const char sel_fg[]          = "#eeeeee";
-static const char col_gray5[]       = "#98971a";
 static const char sel_bg_border[]   = "#928374";
-static const char col1[]            = "#ff0000";
-static const char col2[]            = "#ffffff";
-static const char col3[]            = "#ffffff";
-static const char col4[]            = "#ffffff";
-static const char col5[]            = "#ffffff";
-static const char col6[]            = "#ffffff";
+static const char col1[]            = "#98971a";
+static const char col2[]            = "#d79921";
+static const char col3[]            = "#458588";
+static const char col4[]            = "#b16286";
+static const char col5[]            = "#689d6a";
+static const char col6[]            = "#a89984";
 
 enum { SchemeNorm, SchemeCol1, SchemeCol2, SchemeCol3, SchemeCol4,
        SchemeCol5, SchemeCol6, SchemeSel }; /* color schemes */
