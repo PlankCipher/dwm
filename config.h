@@ -71,7 +71,7 @@ static const Rule rules[] = {
 	{ "Todoist",          NULL,             NULL,       1 << 8,       0,           -1 },
 };
 
-static const float mfact     = 0.55;
+static const float mfact     = 0.66;
 static const int nmaster     = 1;
 static const int resizehints = 1;
 
