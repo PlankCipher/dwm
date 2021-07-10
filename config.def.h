@@ -132,7 +132,7 @@ static Key keys[] = {
 	{ MODIFIER_MOD,                 XK_equal,                  spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5% && sigdwmblocks 3")},
 	{ MODIFIER_MOD,                 XK_0,                      spawn,          SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle && sigdwmblocks 3")},
 	{ MODIFIER_MOD,                 XK_bracketright,           spawn,          SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle && sigdwmblocks 4")},
-	{ MODIFIER_MOD,                 XK_g,                      spawn,          SHCMD("pkill greenclip && greenclip clear && greenclip deamon &")},
+	{ MODIFIER_MOD,                 XK_g,                      spawn,          SHCMD("pkill greenclip && greenclip clear && greenclip daemon &")},
 	{ MODIFIER_MOD,                 XK_less,                   spawn,          SHCMD("mpc prev")},
 	{ MODIFIER_MOD,                 XK_quotedbl,               spawn,          SHCMD("mpc toggle")},
 	{ MODIFIER_MOD,                 XK_greater,                spawn,          SHCMD("mpc next")},
