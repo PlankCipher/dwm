@@ -18,8 +18,8 @@ static const unsigned int gappoh    = 15;
 static const unsigned int gappov    = 15;
 static const int smartgaps          = 0;
 
-static const char *fonts[]          = { "monospace:size=8", "Font Awesome 5 Free Solid:pixelsize=12" };
-static const char dmenufont[]       = "monospace:size=8";
+static const char *fonts[]          = { "monospace:size=10", "Font Awesome 5 Free Solid:pixelsize=12" };
+static const char dmenufont[]       = "monospace:size=10";
 
 static const char norm_bg[]         = "#222222";
 static const char norm_border[]     = "#444444";
@@ -124,14 +124,14 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioLowerVolume,   spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -10% && sigdwmblocks 3")},
 	{ 0,                            XF86XK_AudioRaiseVolume,   spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +10% && sigdwmblocks 3")},
 	{ 0,                            XF86XK_AudioMute,          spawn,          SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle && sigdwmblocks 3")},
-	{ 0,                            XF86XK_AudioMicMute,       spawn,          SHCMD("pactl set-source-mute @DEFAULT_SINK@ toggle && sigdwmblocks 4")},
+	{ 0,                            XF86XK_AudioMicMute,       spawn,          SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle && sigdwmblocks 4")},
 	{ 0,                            XF86XK_MonBrightnessDown,  spawn,          SHCMD("brightnessctl set 10%-")},
 	{ 0,                            XF86XK_MonBrightnessUp,    spawn,          SHCMD("brightnessctl set +10%")},
 
 	{ MODIFIER_MOD,                 XK_minus,                  spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ -5% && sigdwmblocks 3")},
-	{ MODIFIER_MOD,                 XK_plus,                   spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5% && sigdwmblocks 3")},
+	{ MODIFIER_MOD,                 XK_equal,                  spawn,          SHCMD("pactl set-sink-volume @DEFAULT_SINK@ +5% && sigdwmblocks 3")},
 	{ MODIFIER_MOD,                 XK_0,                      spawn,          SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle && sigdwmblocks 3")},
-	{ MODIFIER_MOD|ShiftMask,       XK_0,                      spawn,          SHCMD("pactl set-source-mute @DEFAULT_SINK@ toggle && sigdwmblocks 4")},
+	{ MODIFIER_MOD,                 XK_bracketright,           spawn,          SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle && sigdwmblocks 4")},
 	{ MODIFIER_MOD,                 XK_g,                      spawn,          SHCMD("pkill greenclip && greenclip clear && greenclip deamon &")},
 	{ MODIFIER_MOD,                 XK_less,                   spawn,          SHCMD("mpv prev")},
 	{ MODIFIER_MOD,                 XK_quotedbl,               spawn,          SHCMD("mpv toggle")},
