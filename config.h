@@ -133,9 +133,9 @@ static Key keys[] = {
 	{ MODIFIER_MOD,                 XK_0,                      spawn,          SHCMD("pactl set-sink-mute @DEFAULT_SINK@ toggle && sigdwmblocks 3")},
 	{ MODIFIER_MOD,                 XK_bracketright,           spawn,          SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle && sigdwmblocks 4")},
 	{ MODIFIER_MOD,                 XK_g,                      spawn,          SHCMD("pkill greenclip && greenclip clear && greenclip daemon &")},
-	{ MODIFIER_MOD,                 XK_comma,                  spawn,          SHCMD("mpc prev")},
-	{ MODIFIER_MOD,                 XK_apostrophe,             spawn,          SHCMD("mpc toggle")},
-	{ MODIFIER_MOD,                 XK_period,                 spawn,          SHCMD("mpc next")},
+	{ MODIFIER_MOD,                 XK_comma,                  spawn,          SHCMD("mpc prev && sigdwmblocks 6")},
+	{ MODIFIER_MOD,                 XK_apostrophe,             spawn,          SHCMD("mpc toggle && sigdwmblocks 6")},
+	{ MODIFIER_MOD,                 XK_period,                 spawn,          SHCMD("mpc next && sigdwmblocks 6")},
 	{ MODIFIER_MOD,                 XK_u,                      spawn,          SHCMD("$HOME/.scripts/toggle_lockscreen_timeout.sh toggle")},
 
 	{ DMENU_MOD,                    XK_a,                      spawn,          {.v = dmenucmd } },
