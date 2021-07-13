@@ -31,7 +31,7 @@ static const char col2[]            = "#d79921";
 static const char col3[]            = "#458588";
 static const char col4[]            = "#b16286";
 static const char col5[]            = "#689d6a";
-static const char col6[]            = "#a89984";
+static const char col6[]            = "#777777";
 
 enum { SchemeNorm, SchemeCol1, SchemeCol2, SchemeCol3, SchemeCol4,
        SchemeCol5, SchemeCol6, SchemeSel }; /* color schemes */
