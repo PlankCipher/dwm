@@ -67,6 +67,7 @@ static const Rule rules[] = {
 	{ NULL,               "libreoffice",    NULL,       1 << 5,       0,           -1 },
 	{ "discord",          NULL,             NULL,       1 << 6,       0,           -1 },
 	{ "TelegramDesktop",  NULL,             NULL,       1 << 6,       0,           -1 },
+	{ "Franz",            NULL,             NULL,       1 << 6,       0,           -1 },
 	{ "Thunderbird",      NULL,             NULL,       1 << 7,       0,           -1 },
 	{ "Todoist",          NULL,             NULL,       1 << 8,       0,           -1 },
 };
