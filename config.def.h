@@ -149,7 +149,6 @@ static Key keys[] = {
 
 	{ APPS_MOD,                     XK_Return,                 spawn,          SHCMD("st") },
 	{ APPS_MOD,                     XK_b,                      spawn,          SHCMD("brave") },
-	{ APPS_MOD,                     XK_x,                      spawn,          SHCMD("gksudo /opt/lampp/gui_manager.run") },
 	{ APPS_MOD,                     XK_e,                      spawn,          SHCMD("st -e ranger") },
 	{ APPS_MOD,                     XK_s,                      spawn,          SHCMD("scrot && notify-send -a 'Scrot' 'Screenshot taken'") },
 	{ APPS_MOD,                     XK_m,                      spawn,          SHCMD("st -t ncmpcpp -e ncmpcpp") },
