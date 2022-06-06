@@ -157,6 +157,7 @@ static Key keys[] = {
 	{ APPS_MOD,                     XK_f,                      spawn,          SHCMD("/opt/FreeTube/freetube") },
 	{ APPS_MOD,                     XK_t,                      spawn,          SHCMD("st -e sh -c kabmat") },
 	{ APPS_MOD,                     XK_w,                      spawn,          SHCMD("st -e nmtui") },
+	{ APPS_MOD,                     XK_z,                      spawn,          SHCMD("$HOME/chamber_of_magic/boomer/boomer") },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
