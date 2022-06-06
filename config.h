@@ -155,7 +155,7 @@ static Key keys[] = {
 	{ APPS_MOD,                     XK_s,                      spawn,          SHCMD("scrot && notify-send -a 'Scrot' 'Screenshot taken'") },
 	{ APPS_MOD,                     XK_m,                      spawn,          SHCMD("st -t ncmpcpp -e ncmpcpp") },
 	{ APPS_MOD,                     XK_f,                      spawn,          SHCMD("/opt/FreeTube/freetube") },
-	{ APPS_MOD,                     XK_t,                      spawn,          SHCMD("DESKTOPINTEGRATION=false $HOME/Applications/todoist.AppImage") },
+	{ APPS_MOD,                     XK_t,                      spawn,          SHCMD("st -e sh -c kabmat") },
 	{ APPS_MOD,                     XK_w,                      spawn,          SHCMD("st -e nmtui") },
 
 	TAGKEYS(                        XK_1,                      0)
