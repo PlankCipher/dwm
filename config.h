@@ -139,6 +139,7 @@ static Key keys[] = {
 	{ MODIFIER_MOD,                 XK_period,                 spawn,          SHCMD("mpc next && sigdwmblocks 6")},
 	{ MODIFIER_MOD,                 XK_u,                      spawn,          SHCMD("$HOME/.scripts/toggle_lockscreen_timeout.sh toggle")},
 	{ MODIFIER_MOD,                 XK_b,                      spawn,          SHCMD("$HOME/.scripts/fans.sh toggle")},
+	{ MODIFIER_MOD,                 XK_r,                      spawn,          SHCMD("$HOME/.scripts/random_wallpaper.sh")},
 
 	{ DMENU_MOD,                    XK_a,                      spawn,          {.v = dmenucmd } },
 	{ DMENU_MOD,                    XK_e,                      spawn,          SHCMD("$HOME/.scripts/dmenu/dmenu_emoji/dmenu_emoji.sh") },
