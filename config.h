@@ -48,7 +48,7 @@ static const char *colors[][3]      = {
 	[SchemeCol6]  = { col6,      norm_bg,        norm_border },
 };
 
-static const char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -67,9 +67,7 @@ static const Rule rules[] = {
 	{ NULL,               "libreoffice",    NULL,       1 << 5,       0,           -1 },
 	{ "discord",          NULL,             NULL,       1 << 6,       0,           -1 },
 	{ "TelegramDesktop",  NULL,             NULL,       1 << 6,       0,           -1 },
-	{ "Franz",            NULL,             NULL,       1 << 6,       0,           -1 },
 	{ "Thunderbird",      NULL,             NULL,       1 << 7,       0,           -1 },
-	{ "Todoist",          NULL,             NULL,       1 << 8,       0,           -1 },
 };
 
 static const float mfact     = 0.66;
@@ -94,6 +92,8 @@ static const Layout layouts[] = {
 
 static char dmenumon[2] = "0";
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", norm_bg, "-nf", norm_fg, "-sb", sel_bg_border, "-sf", sel_fg, NULL };
+static const char scratchpadname[] = "kabmat";
+static const char *scratchpadkabmatcmd[] = { "st", "-t", scratchpadname, "-g", "185x45", "-f", "fontyfont:pixelsize=17:antialias=true:autohint=true", "-e", "sh", "-c", "kabmat", NULL };
 
 #include <X11/XF86keysym.h>
 
@@ -155,7 +155,7 @@ static Key keys[] = {
 	{ APPS_MOD,                     XK_s,                      spawn,          SHCMD("scrot && notify-send -a 'Scrot' 'Screenshot taken'") },
 	{ APPS_MOD,                     XK_m,                      spawn,          SHCMD("st -t ncmpcpp -e ncmpcpp") },
 	{ APPS_MOD,                     XK_f,                      spawn,          SHCMD("/opt/FreeTube/freetube") },
-	{ APPS_MOD,                     XK_t,                      spawn,          SHCMD("st -e sh -c kabmat") },
+	{ APPS_MOD,                     XK_t,                      togglescratch,  {.v = scratchpadkabmatcmd } },
 	{ APPS_MOD,                     XK_w,                      spawn,          SHCMD("st -e nmtui") },
 	{ APPS_MOD,                     XK_z,                      spawn,          SHCMD("$HOME/chamber_of_magic/boomer/boomer") },
 	{ APPS_MOD,                     XK_d,                      spawn,          SHCMD("emacs") },
@@ -169,7 +169,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	TAGKEYS(                        XK_0,                      9)
 };
 
 static Button buttons[] = {
