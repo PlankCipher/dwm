@@ -57,7 +57,6 @@ static const Rule rules[] = {
 	 */
 	/* class              instance          title       tags mask     isfloating   monitor */
 	{ "feh",              NULL,             NULL,       0,            1,           -1 },
-	{ "xdm",              NULL,             NULL,       0,            1,           -1 },
 
 	{ "Brave-browser",    NULL,             NULL,       1 << 2,       0,           -1 },
 	{ NULL,               NULL,             "ncmpcpp",  1 << 3,       0,           -1 },
@@ -65,9 +64,7 @@ static const Rule rules[] = {
 	{ "FreeTube",         NULL,             NULL,       1 << 4,       0,           -1 },
 	{ "Zathura",          NULL,             NULL,       1 << 5,       0,           -1 },
 	{ NULL,               "libreoffice",    NULL,       1 << 5,       0,           -1 },
-	{ "discord",          NULL,             NULL,       1 << 6,       0,           -1 },
-	{ "TelegramDesktop",  NULL,             NULL,       1 << 6,       0,           -1 },
-	{ "Thunderbird",      NULL,             NULL,       1 << 7,       0,           -1 },
+	{ "thunderbird",      NULL,             NULL,       1 << 7,       0,           -1 },
 };
 
 static const float mfact     = 0.66;
