@@ -152,7 +152,7 @@ static Key keys[] = {
 	{ APPS_MOD,                     XK_s,                      spawn,          SHCMD("scrot && notify-send -a 'Scrot' 'Screenshot taken'") },
 	{ APPS_MOD,                     XK_m,                      spawn,          SHCMD("st -t ncmpcpp -e ncmpcpp") },
 	{ APPS_MOD,                     XK_f,                      spawn,          SHCMD("/opt/FreeTube/freetube") },
-	{ APPS_MOD,                     XK_t,                      togglescratch,  {.v = scratchpadkabmatcmd } },
+	{ APPS_MOD,                     XK_k,                      togglescratch,  {.v = scratchpadkabmatcmd } },
 	{ APPS_MOD,                     XK_w,                      spawn,          SHCMD("st -e nmtui") },
 	{ APPS_MOD,                     XK_z,                      spawn,          SHCMD("$HOME/chamber_of_magic/boomer/boomer") },
 	{ APPS_MOD,                     XK_d,                      spawn,          SHCMD("emacs") },
