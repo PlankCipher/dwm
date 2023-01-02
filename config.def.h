@@ -138,6 +138,7 @@ static Key keys[] = {
 	{ MODIFIER_MOD,                 XK_b,                      spawn,          SHCMD("$HOME/.scripts/fans.sh toggle")},
 	{ MODIFIER_MOD,                 XK_r,                      spawn,          SHCMD("$HOME/.scripts/random_wallpaper.sh")},
 	{ MODIFIER_MOD,                 XK_m,                      spawn,          SHCMD("xdotool mousemove 1920 1080")},
+	{ MODIFIER_MOD,                 XK_n,                      spawn,          SHCMD("dunstctl close")},
 
 	{ DMENU_MOD,                    XK_a,                      spawn,          {.v = dmenucmd } },
 	{ DMENU_MOD,                    XK_e,                      spawn,          SHCMD("$HOME/.scripts/dmenu/dmenu_emoji/dmenu_emoji.sh") },
@@ -155,6 +156,7 @@ static Key keys[] = {
 	{ APPS_MOD,                     XK_k,                      togglescratch,  {.v = scratchpadkabmatcmd } },
 	{ APPS_MOD,                     XK_w,                      spawn,          SHCMD("st -e nmtui") },
 	{ APPS_MOD,                     XK_z,                      spawn,          SHCMD("$HOME/chamber_of_magic/boomer/boomer") },
+	{ APPS_MOD,                     XK_n,                      spawn,          SHCMD("dunstctl history-pop") },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
