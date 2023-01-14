@@ -60,7 +60,7 @@ static const Rule rules[] = {
 
 	{ "Brave-browser",    NULL,             NULL,       1 << 2,       0,           -1 },
 	{ NULL,               NULL,             "ncmpcpp",  1 << 3,       0,           -1 },
-	{ "vlc",              NULL,             NULL,       1 << 4,       0,           -1 },
+	{ "mpv",              NULL,             NULL,       1 << 4,       0,           -1 },
 	{ "FreeTube",         NULL,             NULL,       1 << 4,       0,           -1 },
 	{ "Zathura",          NULL,             NULL,       1 << 5,       0,           -1 },
 	{ NULL,               "libreoffice",    NULL,       1 << 5,       0,           -1 },
